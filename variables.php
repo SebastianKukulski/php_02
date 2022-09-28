@@ -9,7 +9,7 @@
 </head>
 <body>
 <?php
-$string="Strycharczyk";
+$string="Kukulski";
 echo "<br><br>$string<br>";
 var_dump($string);
 

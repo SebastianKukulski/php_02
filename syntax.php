@@ -17,8 +17,7 @@ echo ("Tu_funkcja_echo<br>");
 print "Zgłasza".  "się".  "funkcja".  "print<br>";
 print ("Zgłasza się funkcja print<br>")
 /*
- Kita to kox
- Walas nie kox
+wjwahbrfujrawsehfuwsrhswui
  */
 ?>
 <?="Tak<br>"?>
