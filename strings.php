@@ -16,7 +16,7 @@ echo str_word_count($DOBRA_RADA).'<br>';
 echo strrev($DOBRA_RADA).'<br>';
 echo strpos( $DOBRA_RADA, "a").'<br>';
 echo str_replace("chleba", "mięsa", "$DOBRA_RADA").'<br>';
-echo strtolower( $DOBRA_RADA).'<br>';
+echo strtolower( $DOBRA_RADA)
 
 
 
