@@ -17,6 +17,7 @@ echo $title;
     <li><a href="plan_lekcji.php">Plan lekcji</a></li>
     <li><a href="syntax.php">Funkcje</a></li>
     <li><a href="variables.php">Zmienne</a></li>
+    <li><a href="strings.php">Zmienne</a></li>
 </ol>
 </body>
 </html>

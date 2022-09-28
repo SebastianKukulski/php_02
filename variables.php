@@ -24,17 +24,13 @@ var_dump($float);
 $bool=true;
 echo "<br><br>$bool<br>";
 var_dump($bool);
-
-
 $a = 97;
-$b = 3,14;
+$b = 3.14;
 $c = "PHP";
-
-
 ?>
-<h3 style=""><?=$a ?> jest liczbą pierwszą</h3>
-<p style=""><?=$b ?> Liczba Pi zaokrąglona do dwóch miejsc po przecinku</p>
-<div style=""><?= $c ?> to język skryptowy wykonywany po stronie</div>
+<h3 style="color: red"><?= $a ?> jest liczbą pierwszą</h3>
+<p style="color: #FF6347"><?= $b ?> Liczba Pi zaokrąglona do dwóch miejsc po przecinku</p>
+<div style="text-decoration: underline double;"><?= $c ?> to język skryptowy wykonywany po stronie</div>
 <li><a href="index.php">Powrót do strony głównej</a></li>
 
 </body>
