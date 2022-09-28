@@ -22,7 +22,7 @@ print ("Zgłasza się funkcja print<br>")
  */
 ?>
 <?="Tak<br>"?>
-<?="I". "śmierdzi". "od". "niego"?>
+<?="I". "Hello". "od". "World"?>
 
 <li><a href="index.php">Powrót do strony głównej</a></li>
 
