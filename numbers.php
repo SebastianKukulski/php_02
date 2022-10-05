@@ -47,28 +47,68 @@ var_dump(is_numeric($n1));
 Echo "<br>";
 
 
+Echo "Stała PHP_INT_MAX ma wartość";
 Echo PHP_INT_MAX;
 Echo "<br>";
 
+Echo "Stała PHP_INT_INT ma wartość" ;
 Echo PHP_INT_MIN;
 Echo "<br>";
 
+Echo "Stała PHP_INT_SIZE ma wartość";
 Echo PHP_INT_SIZE;
 Echo "<br>";
 
-Echo PHP_FLOAT_MAX;
+Echo "Stała PHP_FLOAT_MAX ma wartość";
+Echo PHP_FLOAT_MIN;
 Echo "<br>";
 
+Echo "Stała PHP_INT_MIN ma wartość" ;
 Echo PHP_INT_MIN;
 Echo "<br>";
 
+Echo "Stała PHP_FLOAT_DIG ma wartość" ;
 Echo PHP_FLOAT_DIG;
 Echo "<br>";
 
+Echo "Stała PHP_FLOAT_EPSILON ma wartość";
 Echo PHP_FLOAT_EPSILON;
 Echo "<br>";
+
+$g = 5;
+$y = 15;
+Echo "Wynik dodawania 5 i 15  wynosi ";
+Echo $g+$y;
+Echo "<br>";
+
+Echo "Wynik odejmowania 5 i 15  wynosi ";
+Echo $g-$y;
+Echo "<br>";
+
+Echo "Wynik mnożenia 5 i 15  wynosi ";
+Echo $g*$y;
+Echo "<br>";
+
+Echo "Wynik dzielenia 5 i 15  wynosi ";
+Echo $g/$y;
+Echo "<br>";
+
+$t = 4;
+$k = 35;
+Echo "Pole prostokąta o bokach długości 4 i 35 wynosi ";
+Echo $t*$k;
+Echo "j";
+Echo "<br>";
+
+Echo "Obwód prostokąta o bokach długości 4 i 35 wynosi ";
+Echo 2*$t+2*$k;
+Echo "<br>";
+
+
+
 ?>
 <ol style="list-style: decimal-leading-zero">
+    <li><a href="index.php">Powrót do strony głównej</a></li>
     <li><a href="plan_lekcji.php">Plan lekcji</a></li>
     <li><a href="syntax.php">Funkcje</a></li>
     <li><a href="variables.php">Zmienne</a></li>
