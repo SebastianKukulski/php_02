@@ -97,7 +97,7 @@ $t = 4;
 $k = 35;
 Echo "Pole prostokąta o bokach długości 4 i 35 wynosi ";
 Echo $t*$k;
-Echo "j";
+Echo "j<sup>2</sup>";
 Echo "<br>";
 
 Echo "Obwód prostokąta o bokach długości 4 i 35 wynosi ";
@@ -111,8 +111,8 @@ Echo "<br>";
     <li><a href="index.php">Powrót do strony głównej</a></li>
     <li><a href="plan_lekcji.php">Plan lekcji</a></li>
     <li><a href="syntax.php">Funkcje</a></li>
-    <li><a href="variables.php">Zmienne</a></li>
-    <li><a href="strings.php">Zmienne</a></li>
+    <li><a href="variables.php">Variables</a></li>
+    <li><a href="strings.php">Strings</a></li>
 </ol>
 </body>
 </html>
