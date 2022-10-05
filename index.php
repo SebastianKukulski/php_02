@@ -18,6 +18,7 @@ echo $title;
     <li><a href="syntax.php">Funkcje</a></li>
     <li><a href="variables.php">Zmienne</a></li>
     <li><a href="strings.php">Zmienne</a></li>
+    <li><a href="numbers.php">Numery</a></li>
 </ol>
 </body>
 </html>
