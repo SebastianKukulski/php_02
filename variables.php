@@ -32,6 +32,12 @@ $c = "PHP";
 <p style="color: #FF6347"><?= $b ?> Liczba Pi zaokrąglona do dwóch miejsc po przecinku</p>
 <div style="text-decoration: underline double;"><?= $c ?> to język skryptowy wykonywany po stronie</div>
 <li><a href="index.php">Powrót do strony głównej</a></li>
-
+<ol style="list-style: decimal-leading-zero">
+    <li><a href="index.php">Powrót do strony głównej</a></li>
+    <li><a href="plan_lekcji.php">Plan lekcji</a></li>
+    <li><a href="syntax.php">Funkcje</a></li>
+    <li><a href="variables.php">Variables</a></li>
+    <li><a href="strings.php">Strings</a></li>
+</ol>
 </body>
 </html>
