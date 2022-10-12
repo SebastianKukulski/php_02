@@ -19,6 +19,7 @@ echo $title;
     <li><a href="variables.php">Zmienne</a></li>
     <li><a href="strings.php">Zmienne</a></li>
     <li><a href="numbers.php">Numery</a></li>
+    <li><a href="conditionals.php">Conditionals</a></li>
 </ol>
 </body>
 </html>
