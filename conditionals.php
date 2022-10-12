@@ -64,7 +64,8 @@ echo "Wylosowana liczba jest większa lub równa 20";
     echo $miesiac;
     ?>
     </h1>
-    <h3 style="border-style: dotted;
+    <h3 style="border-top-style: dashed;
+    border-bottom-style: dashed;
   border-width: 2px;
   color: pink;
   font-family: cursive">
