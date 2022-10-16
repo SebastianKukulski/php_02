@@ -15,10 +15,10 @@
 $losowa = rand(1,30);
 
 ?>
-<h4 style="color: magenta" >
+<h4 style="color: magenta" >   <!Ustala kolor magenta>
     <?php
 if (20 <= $losowa)
-echo "Wylosowana liczba jest większa lub równa 20";
+echo "Wylosowana liczba jest większa lub równa 20";   
 ?>
 </h4>
 
