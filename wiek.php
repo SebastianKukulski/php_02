@@ -34,3 +34,4 @@ $wiek = rand (0, 100);
     ?></h2>
 </body>
 </html>
+sdasadsa
