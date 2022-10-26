@@ -20,6 +20,9 @@
         border-collapse: collapse;
     background-color: lightgrey;
 }
+    table{
+        border-collapse: collapse;
+    }
     </style>
 </head>
 <body >
