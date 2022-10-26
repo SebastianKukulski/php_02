@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div style="text-align: center;"> /*Wyśrodkowuje wszystko w divie*/
+<div style="text-align: center;">
        
     <li><a href="conditionals.php">Refresh</a></li>
     
@@ -100,6 +100,77 @@ echo "Wylosowana liczba jest większa lub równa 20";
     ?>
 
     </h3>
+    <?php
+    $wiek=35;
+    if ($wiek<=18) {
+        echo "Jeszcze nie możesz głosować<br>";
+    }
+    elseif ($wiek<=18)
+        {
+        echo "Możesz tylko głosować<br>";}
+    elseif ($wiek<=21) {
+        echo "Możesz głosować i kandydować do sejmu<br>";
+    }
+    elseif ($wiek<=30) {
+        echo "Możesz głosować i kandydować do sejmu i senatu<br>";
+    }
+    elseif ($wiek<=35) {
+        echo "Możesz głosować i kandydować do sejmu i senatu oraz na prezydenta<br>";
+    }
+
+    ?>
+
+
+<?php
+$ile = 5;
+switch ($ile){
+    case 1:
+        echo "+";
+    break;
+    case 2;
+        echo "++";
+    break;
+    case 3;
+        echo "+++";
+        break;
+    case 4;
+        echo "++++";
+        break;
+    case 5;
+        echo "+++++<br>";
+        break;
+    case 6;
+        echo "++++++<br>";
+        break;
+    case 7;
+        echo "+++++++<br>";
+        break;
+    case 8;
+        echo "++++++++<br>";
+        break;
+    case 9:
+        echo "+++++++++<br>";
+        break;
+    default:
+        echo "Wartość poza zakresem<br>";
+
+
+
+}
+?>
+    <?php
+    $a = 10;
+    $b = 20;
+    $c = 30;
+
+    $najwieksza = max($a, $b, $c);
+
+    echo $najwieksza;
+
+
+
+?>
+
 </div>
 </body>
 </html>
