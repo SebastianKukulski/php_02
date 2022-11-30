@@ -45,6 +45,24 @@ $litery_wstecz = range('X','M');
 print_r($litery_wstecz);
 ?>
 </pre>
+    <?php
+    $tablica = range(0,10);
+
+    shuffle($tablica);
+    ?>
+<table style="background-color: aliceblue"; >
+<tr>
+    <?php
+    foreach ($tablica as $tablic) {
+        echo  '<td style="border: 1px solid dodgerblue;padding: 10px;text-aligncenter'
+            .$tablic.'</td>';
+
+
+    }
+    ?>
+
+</tr>
+</table>
 </body>
 </html>
 
