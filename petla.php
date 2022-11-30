@@ -67,7 +67,7 @@ foreach ($znaki AS $znak){
     $k = 1;
     do {
         echo "<td style='background-color: greenyellow;
-border-collapse: collapse;
+border: 3mm  greenyellow;
 
 '>To jest wiersz kolumna $k</td>";
     $k++;
