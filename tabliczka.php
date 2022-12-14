@@ -10,6 +10,7 @@
         table {
             border-collapse: collapse;
             border: 1px solid black;
+            text-align: center;
         }
 
         td, tr {
@@ -30,12 +31,12 @@
     <table>
         <h3>Tabliczka mnożenia</h3>
         <?php
-        $poziome = 10;
-        $pionowe = 10;
+        $poziome1 = 10;
+        $pionowe1 = 10;
 
-        for ($i = 0; $i <= $pionowe; $i++) {
+        for ($i = 0; $i <= $pionowe1; $i++) {
             echo '<tr>';
-            for ($j = 0; $j <= $poziome; $j++) {
+            for ($j = 0; $j <= $poziome1; $j++) {
                 if (($i == 0) && ($j == 0)) echo '<td style="background: rgba(80,36,36,0.52);">x</td>';
                 elseif ($i == 0) echo '<td style="background: rgba(80,36,36,0.52);">' . $j . '</td>';
                 elseif ($j == 0) echo '<td style="background: rgba(80,36,36,0.52);">' . $i . '</td>';
