@@ -20,42 +20,37 @@ print_r($owoce);
 <pre>
 <pre>
 <?php
-$parzyste = range(0,12,2);
+$parzyste = range(0, 12, 2);
 print_r($parzyste);
 
 
-$dziesiatki = range(-10,100,10);
+$dziesiatki = range(-10, 100, 10);
 print_r($dziesiatki);
 
 
-
-
-$polowki = range (-5.5,5.5,0.5);
+$polowki = range(-5.5, 5.5, 0.5);
 print_r($polowki);
 
 
-
-
-$litery_od_em = range('m','u',);
+$litery_od_em = range('m', 'u',);
 print_r($litery_od_em);
 
 
-
-$litery_wstecz = range('X','M');
+$litery_wstecz = range('X', 'M');
 print_r($litery_wstecz);
 ?>
 </pre>
     <?php
-    $tablica = range(0,10);
+    $tablica = range(0, 10);
 
     shuffle($tablica);
     ?>
-<table style="background-color: aliceblue"; >
+<table style="background-color: aliceblue" ;>
 <tr>
     <?php
     foreach ($tablica as $tablic) {
-        echo  '<td style="border: 1px solid dodgerblue;padding: 10px;text-aligncenter'
-            .$tablic.'</td>';
+        echo '<td style="border: 1px solid dodgerblue;padding: 10px;text-aligncenter'
+            . $tablic . '</td>';
 
 
     }
@@ -63,6 +58,20 @@ print_r($litery_wstecz);
 
 </tr>
 </table>
+    <?php
+
+    $filmy = array(
+        "Skazani na Shawshank" => "dramat"
+        "Nietykalni" => "biograficzny",
+        "Władca Pierścieni: Powrót króla" => "fantasy",
+        "Pulp fiction"  => "gangsterski",
+        'Siedem' => 'kryminał'
+        'Podziemny krąg' => 'thriller'
+        'Django' => 'westerm'
+        'Król lew'  => 'animacja'
+    );
+     print_r($filmy)
+    ?>
 </body>
 </html>
 

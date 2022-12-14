@@ -16,13 +16,16 @@
 <h1>Sebastian Kukulski</h1>
 
 
-
-
 <table>
     <caption>PLAN LEKCJI</caption>
     <thead>
     <tr>
-        <td>Godz</td> <td>Poniedziałek</td> <td>Wtorek</td> <td>Sroda</td> <td>Czwartek</td> <td>Piatek</td>
+        <td>Godz</td>
+        <td>Poniedziałek</td>
+        <td>Wtorek</td>
+        <td>Sroda</td>
+        <td>Czwartek</td>
+        <td>Piatek</td>
     </tr>
     </thead>
     <tbody>
@@ -58,13 +61,15 @@
         th, td {
             border: 1px solid black;
         }
+
         table {
             border-collapse: collapse;
             text-align: center;
             width: 100%;
             table-layout: fixed;
         }
-        h1{
+
+        h1 {
             text-align: center;
         }
     </style>
