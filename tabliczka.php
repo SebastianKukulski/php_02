@@ -14,7 +14,7 @@
         }
 
         td, tr {
-            border: 1px dotted black;
+            border: 1px dashed black;
             border-collapse: collapse;
         }
 
