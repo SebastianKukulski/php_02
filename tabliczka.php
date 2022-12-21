@@ -11,11 +11,13 @@
             border-collapse: collapse;
             border: 1px solid black;
             text-align: center;
+
         }
 
         td, tr {
             border: 1px dashed black;
             border-collapse: collapse;
+
         }
 
         tr {
@@ -28,8 +30,9 @@
 </head>
 <body>
 <div style="text-align: center;">
+
     <table>
-        <h3>Tabliczka mnożenia</h3>
+        <th>Tabliczka mnożenia</th>
         <?php
         $poziome1 = 10;
         $pionowe1 = 10;
@@ -41,8 +44,10 @@
                 elseif ($i == 0) echo '<td style="background: rgba(80,36,36,0.52);">' . $j . '</td>';
                 elseif ($j == 0) echo '<td style="background: rgba(80,36,36,0.52);">' . $i . '</td>';
                 else echo '<td>' . $i * $j . '</td>';
+                if ()
             }
             echo '</tr>';
+
         }
         ?>
 
