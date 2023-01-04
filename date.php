@@ -44,7 +44,7 @@ $dni_tygodnia = array("poniedziałek", "wtorek", "środa", "czwartek", "piątek"
 $miesiace = array("styczeń", "luty", "marzec", "kwiecień", "maj", "czerwiec", "lipiec", "sierpień", "wrzesień", "październik", "listopad", "grudzień");
 
 echo "Urodziłem się we " .
-    $dni_tygodnia[date("N", strtotime("1995-12-21")) - 1] . ", 21 " .
+    $dni_tygodnia[date("N", strtotime("1995-12-21")) - 1] . ", 22" .
     $miesiace[date("n", strtotime("1995-12-21")) - 1] . " 1995 roku.";
 echo "Swoj pierwszy milion dolarów zarobię w " .
     $dni_tygodnia[date("N", strtotime("2037-05-03")) - 1] . ", 3 " .
