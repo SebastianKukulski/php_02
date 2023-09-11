@@ -11,17 +11,18 @@
 </head>
 <body>
 
-<div style="background: aqua; height: 800px; width: 200px;">
+<div style="background: aqua; height: 800px; width: 200px; float: left">
     <a href="index.php?page=Strona">Strona</a><br>
     <a href="index.php?page=czytelnicy">Czytelnicy</a><br>
     <a href="index.php?page=dzialy">Działy</a><br>
+
     <a href="index.php?page=ksiazki">Książki</a><br>
     <a href="index.php?page=Tabela Czytelnicy">Tabela Czytelnicy</a><br>
     <a href="index.php?page=pracownicy">Pracownicy</a><br>
     <a href="index.php?page=stanowiska">Stanowiska</a><br>
     <a href="index.php?page=wypozyczenia">Wypożyczenia</a><br>
 </div>
-
+<div style="float: right">
 <?php
 $mysqliProceduralConnection = mysqli_connect("localhost", "dt19kukulskis", "12345678", "dt19kukulskis");
 
@@ -45,6 +46,6 @@ if (isset($_GET['page'])) {
     }
 }
 ?>
-
+</div>
 </body>
 </html>
