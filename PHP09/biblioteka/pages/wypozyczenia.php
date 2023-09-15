@@ -1,4 +1,50 @@
 <?php
+// Utwórz połączenie do bazy danych
+$servername = "localhost";
+$username = "dt19kukulskis";
+$password = "12345678";
+$dbname = "dt19kukulskis";
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Sprawdź połączenie z bazą danych
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Sprawdź, czy pole 'Nazwa' zostało przesłane
+    if(isset($_POST["Nazwa"])) {
+        $nazwa = $_POST["Nazwa"];
+
+        // Przygotuj zapytanie SQL i wykonaj wstawienie danych do bazy
+        $sql = "INSERT INTO DZIALY (Nazwa) VALUES ('$nazwa')";
+
+        if ($conn->query($sql) === TRUE) {
+            echo "Nowy rekord został pomyślnie dodany";
+        } else {
+            echo "Błąd: " . $sql . "<br>" . $conn->error;
+        }
+    }
+}
+?>
+
+    <form action="?page=dzialy_dodaj" method="post">
+        <table>
+            <tr>
+                <td style="color: aqua;"><label for="b">Nazwa</label></td>
+                <td><input type="text" id="b" name="Nazwa"></td>
+            </tr>
+            <tr>
+                <th colspan="2"><button type="submit">Zapisz</button></th>
+            </tr>
+        </table>
+    </form>
+
+<?php
+// Zamknij połączenie z bazą danych po użyciu
+$conn->close();
+?><?php
 // Utwórz połączenie z bazą danych "dt19kukulskis"
 $mysqliProceduralDzialyConnection = mysqli_connect('localhost', 'dt19kukulskis', '12345678', 'dt19kukulskis');
 

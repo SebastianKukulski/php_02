@@ -7,11 +7,14 @@
     <title>Document</title>
     <style>
         /* Dodaj swoje style CSS tutaj */
+        *{
+            background-color: bisque;
+        }
     </style>
 </head>
 <body>
 
-<div style="background: aqua; height: 800px; width: 200px; float: left">
+<div style=" height: 800px; width: 200px; float: left">
     <a href="index.php?page=Strona">Strona</a><br>
     <a href="index.php?page=czytelnicy">Czytelnicy</a><br>
     <a href="index.php?page=dzialy">Działy</a><br>
@@ -22,7 +25,7 @@
     <a href="index.php?page=stanowiska">Stanowiska</a><br>
     <a href="index.php?page=wypozyczenia">Wypożyczenia</a><br>
 </div>
-<div style="float: right">
+<div style="float: right; background-color: bisque" >
 <?php
 $mysqliProceduralConnection = mysqli_connect("localhost", "dt19kukulskis", "12345678", "dt19kukulskis");
 

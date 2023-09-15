@@ -1,38 +1,70 @@
 <?php
+// Utwórz połączenie do bazy danych
+$servername = "localhost";
+$username = "dt19kukulskis";
+$password = "12345678";
+$dbname = "dt19kukulskis";
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") // Zapisz dane z formularza do bazy [INSERT]
-{
-    // tu będzie zapytanie typu insert do bazy
-    // przed wysłaniem danych do bazy warto je poddać walidacji
+$conn = new mysqli($servername, $username, $password, $dbname);
 
-    $sql = "INSERT INTO MyGuests (firstname, lastname, email) <-- to tylko przykład
-           VALUES ('John', 'Doe', 'john@example.com')";
+// Sprawdź połączenie z bazą danych
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
 
-    if ($conn->query($sql) === TRUE) {
-        echo "New record created successfully";
-    } else {
-        echo "Error: " . $sql . "<br>" . $conn->error;
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Sprawdź, czy pole 'Nazwa' zostało przesłane
+    if(isset($_POST["Nazwa"])) {
+        $nazwa = $_POST["Nazwa"];
+
+        // Przygotuj zapytanie SQL i wykonaj wstawienie danych do bazy
+        $sql = "INSERT INTO DZIALY (Nazwa) VALUES ('$nazwa')";
+
+        if ($conn->query($sql) === TRUE) {
+            echo "Nowy rekord został pomyślnie dodany";
+        } else {
+            echo "Błąd: " . $sql . "<br>" . $conn->error;
+        }
     }
-
-} else { // lub wyświetl formularz
-    ?>
-    <form action="?page=dzialy_dodaj" method="post">
-        <table>
-            <tr>
-                <td style="color: aqua h"> <label for="a">Id_dzial</label></td>
-                <td> <input type="text" id="a" disabled> </td>
-                <br>
-            </tr>
-            <tr>
-                <td><label for="b">Nazwa</label> </td>
-                <td><input type="text" id="b"> </td>
-                <br>
-            </tr>
-            <tr><th colspan="2"><button type="submit">Zapisz</button></th></tr>
-        </table>
-    </form>
-    <?php
 }
 ?>
 
+    <form action="?page=dzialy_dodaj" method="post">
+        <table>
+            <tr>
+                <td>Id_dzial</td> <td><input type = "text" disabled></td>
+            </tr>
+            <tr>
+                <td style="color: #001313;"><label for="b">Nazwa</label></td>
+                <td><input type="text" id="b" name="Nazwa"></td>
+            </tr>
+            <tr>
+                <th colspan="2"><button type="submit">Zapisz</button></th>
+            </tr>
+        </table>
+    </form>
+
+<?php
+// Zamknij połączenie z bazą danych po użyciu
+$conn->close();
+?><?php
+// Utwórz połączenie z bazą danych "dt19kukulskis"
+$conn = mysqli_connect('localhost', 'dt19kukulskis', '12345678', 'dt19kukulskis');
+
+if (!$conn) {
+    die("Connection to 'dt19kukulskis' database failed: " . mysqli_connect_error());
+}
+
+// Obsługa dodawania działu
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $nazwa = $_POST["Nazwa"];
+
+    $sql_dodaj = "INSERT INTO dzialy (Nazwa) VALUES ('$nazwa')";
+
+
+}
+
+// Zapytanie SQL z wykorzystaniem JOIN
+$sql_wyswietl = "SELECT * from dzialy";
+$result = mysqli_query($conn, $sql_wyswietl);
 ?>
